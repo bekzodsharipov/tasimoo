@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       * {margin: 0;padding: 0;box-sizing: border-box;}body, html {overflow-x: hidden;}body {background-color: #F7F6FC;}.wrapper {background-image: url(./images/bg.avif);background-repeat: no-repeat;background-size: cover;background-position: center;max-width: 400px;margin: 0 auto;}.header {padding-top: 14px;padding-bottom: 10px;}.header__box {display: flex;align-items: center;justify-content: space-between;background-color: white;padding: 11px 15px;border-radius: 100px;}.header__menu {cursor: pointer;}.container {max-width: 390px;margin: 0 auto;padding: 0 10px;position: relative;}.hero {padding-top: 11px;padding-bottom: 31px;}.hero__titleBox {background-image: url(./images/titleBg.avif);background-repeat: no-repeat;background-size: cover;background-position: center;margin-bottom: 10px;padding: 26px 0;max-width: 390px;width: 100%;}.hero__title {font-family: Kuunari, sans-serif;font-weight: 700;font-size: clamp(24px, 8vw, 34px);line-height: 114%;text-align: center;text-transform: uppercase;color: white;}.hero__title span {color: #5BFFCC;}.hero__images {max-width: clamp(235px, 73vw, 269px);width: 100%;height: auto;position: relative;z-index: 2;margin-left: -40px;}.hero_nav {background-color: white;border: 1px solid #B7B7B7;border-radius: 20px;padding: 15px 17px 17px 16px;max-width: clamp(180px, 56vw, 220px);width: 100%;display: flex;flex-direction: column;gap: 12px;position: absolute;top: 165px;left: 160px;}.hero__item {display: flex;align-items: center;gap: 6px;}.hero__item p {font-family: Caros, sans-serif;font-weight: 400;font-size: clamp(10.5px, 3.4vw, 13.5px);line-height: 110%;}.hero__item p span {font-family: Caros, sans-serif;font-weight: 600;font-size: clamp(16px, 5vw, 18px);line-height: 100%;}.timer {background-color: white;border-radius: 10px;border: 2px solid #21BF8E;max-width: 71px;width: 100%;font-family: Kuunari, sans-serif;font-weight: 700;font-size: 24px;line-height: 110%;text-align: center;padding: 7px 12px;}.hero__timers {display: flex;align-items: center;position: absolute;top: 330px;left: 240px;}.hero__info {background: linear-gradient(180deg, #E0F2FF 0%, #86CEFF 100%);border-radius: 30px;max-width: 390px;width: 100%;padding: 10px 12px 23px 12px;display: flex;flex-direction: column;align-items: center;justify-content: center;gap: 8px;margin-top: -100px;position: relative;z-index: 3;}.hero__info__title {font-family: Caros, sans-serif;font-weight: 500;font-size: 18px;line-height: 110%;text-align: center;}.hero__btn {max-width: 366px;width: 100%;border-radius: 20px;background-color: #0A8AE2;box-shadow: 0px 4px 0px 0px #0773BD;box-shadow: 0px 4px 15px 0px #0000004D;border: none;cursor: pointer;text-decoration: none;display: flex;align-items: center;justify-content: center;gap: 8px;padding: 25px 0;font-family: Caros, sans-serif;font-weight: 600;font-size: clamp(16px, 5vw, 18px);line-height: 27.9px;color: white;}@media (max-width:370px) {.hero_nav {top: 140px;left: 137px;padding: 13px;}.hero__images {margin-left: -35px;}.hero__timers {top: 280px;left: 200px;}.timer {font-size: 23px;padding: 5px 10px;}.hero__arrow {margin-left: -10px;}.hero__info {padding: 10px 12px 15px 12px;}}
+    </style>
+    <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="./css/main.css" />
+    </noscript>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__box">
+                    <a class="header__link" href="./index.html">
+                        <img src="./images/logo.avif" loading="lazy" decoding="async" width="113" height="21"
+                            alt="logo">
+                    </a>
+
+                    <div class="header__menu">
+                        <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.2 2.33333H22.8C23.1183 2.33333 23.4235 2.21042 23.6486 1.99167C23.8736 1.77282 24 1.47609 24 1.16667C24 0.857242 23.8736 0.560516 23.6486 0.341667C23.4236 0.122917 23.1183 0 22.8 0H1.2C0.881735 0 0.576531 0.122917 0.351429 0.341667C0.126429 0.560516 0 0.857242 0 1.16667C0 1.47609 0.126429 1.77282 0.351429 1.99167C0.576531 2.21042 0.881735 2.33333 1.2 2.33333ZM22.8 11.6667H1.2C0.881735 11.6667 0.576531 11.7897 0.351429 12.0084C0.126429 12.2272 0 12.5239 0 12.8333C0 13.1428 0.126429 13.4396 0.351429 13.6583C0.576531 13.8771 0.881735 14 1.2 14H22.8C23.1183 14 23.4235 13.8771 23.6486 13.6583C23.8737 13.4396 24 13.1428 24 12.8333C24 12.5239 23.8736 12.2272 23.6486 12.0084C23.4236 11.7897 23.1183 11.6667 22.8 11.6667ZM22.8 5.83333H1.2C0.881735 5.83333 0.576531 5.95635 0.351429 6.1751C0.126429 6.39385 0 6.69057 0 7C0 7.30942 0.126429 7.60625 0.351429 7.825C0.576531 8.04375 0.881735 8.16667 1.2 8.16667H22.8C23.1183 8.16667 23.4235 8.04375 23.6486 7.825C23.8737 7.60625 24 7.30942 24 7C24 6.69057 23.8736 6.39385 23.6486 6.1751C23.4236 5.95635 23.1183 5.83333 22.8 5.83333Z"
+                                fill="#0B4075" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <section class="hero">
+            <div class="hero__container container">
+                <div class="hero__box">
+                    <div class="hero__titleBox">
+                        <h1 class="hero__title"><span>xalqaro matematiklar</span> <br>
+                            olimpiadasida qatnashing</h1>
+                    </div>
+
+                    <img class="hero__images" src="./images/speaker.avif" loading="lazy" decoding="async" width="269"
+                        height="403" alt="speaker">
+
+                    <ul class="hero_nav">
+                        <li class="hero__item">
+                            <img src="./images/tick.avif" loading="lazy" decoding="async" width="25" height="25"
+                                alt="tick">
+                            <p><span>Pul mukofotlari</span> <br>
+                                va universitet grantlari</p>
+                        </li>
+                        <li class="hero__item">
+                            <img src="./images/tick.avif" loading="lazy" decoding="async" width="25" height="25"
+                                alt="tick">
+                            <p><span>3-11-sinf</span> maktab <br>
+                                o’quvchilari uchun</p>
+                        </li>
+                        <li class="hero__item">
+                            <img src="./images/tick.avif" loading="lazy" decoding="async" width="25" height="25"
+                                alt="tick">
+                            <p><span>Bepul</span> tayyorgarlik <br>
+                                va materiallar</p>
+                        </li>
+                    </ul>
+
+                    <div class="hero__timers">
+                        <div class="timer" id="timer">2:00</div>
+                        <img class="hero__arrow" src="./images/arrow.avif" loading="lazy" decoding="async" alt="arrow">
+                    </div>
+                </div>
+
+                <div class="hero__info">
+                    <h2 class="hero__info__title">Ishtirok etish uchun Telegram <br> kanalga qo’shiling:</h2>
+                    <a class="hero__btn" href="./thankYou.html">
+                        <img src="./images/telegram.avif" loading="lazy" decoding="async" width="28" height="28"
+                            alt="telegram icon">
+                        Telegram kanalga qo’shilish
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script defer src="./js/phoneFormatter.js"></script>
+    <script defer src="./js/app.js"></script>
+</body>
+
+</html>
